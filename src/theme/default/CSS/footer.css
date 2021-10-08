@@ -1,0 +1,17 @@
+:root{
+    --second-color: #ffc800;
+    --black: #000814;
+}
+.footer{
+    background: var(--black);
+    color: white;
+}
+
+.footer__list{
+    text-align: center;
+    list-style: none;
+}
+
+.list__item{
+    display: inline-block;
+}
