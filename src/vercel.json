@@ -5,11 +5,7 @@
             
             "src": "./index.js",
             "use": "@vercel/node"
-        },
-        { 
-            "src": "./theme/**}", 
-            "use": "@vercel/static"
-         }
+        }
     ],
     "routes": [
         {

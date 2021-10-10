@@ -2,10 +2,9 @@ const express = require("express");
 const bodyParser = require('body-parser');
 const app = express()
 const puerto = 3000;
-var path = require('path');
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, 'theme')));
+app.use('/static', express.static(__dirname + '/theme'));
 
 app.get("/", (req, res) =>{
     res.sendFile(__dirname +  "/views/home.html");
