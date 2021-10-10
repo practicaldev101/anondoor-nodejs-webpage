@@ -18,8 +18,7 @@ app.post("/contact", (req, res) =>{
         "to": "your email here",
         "comment": req.body.comment
     };
-    console.log(data.subject);
-
+    
     if(data.subject && data.from && data.comment){
         res.send("<script>alert('Do something'); document.location = '/#contact'</script>");
 
