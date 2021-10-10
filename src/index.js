@@ -7,10 +7,14 @@ const puerto = 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) =>{
-    res.sendFile(__dirname +  "/views/home.html");
     app.use(express.static("theme"));
-})
+    res.sendFile(__dirname +  "/views/home.html");
+});
 
+app.get("/test", (req, res)=>{
+    app.use(express.static("theme"));
+    res.send(__dirname)
+});
 app.post("/contact", (req, res) =>{
     var data = {
         "subject": req.body.subject,
@@ -18,7 +22,7 @@ app.post("/contact", (req, res) =>{
         "to": "your email here",
         "comment": req.body.comment
     };
-    
+
     if(data.subject && data.from && data.comment){
         res.send("<script>alert('Do something'); document.location = '/#contact'</script>");
 
