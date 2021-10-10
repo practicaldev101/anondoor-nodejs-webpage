@@ -82,7 +82,7 @@
         <section id="about" class="main__container bg-green">
             
             <!--Image container-->
-            <div class="container__col container__col--w6 container__col--hg5 container__col--hgrel">
+            <div class="container__col container__col--w6 container__col--hgrel container__col--hgrel">
                 <img class="col__img" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=869&q=80" alt="">
                 <h2 class="col__title-img">ANONDOOR</h2>
             </div>
@@ -110,14 +110,14 @@
                 <div class="container__col container__col--w2 container__col--hgrel col__text--white container__col--mg5"></div>
                 <div class="container__col container__col--w4 container__col--hgrel col__text--white container__col--mg5">
                     <div class="col__form bd-15">
-                        <form action="#">
+                        <form method="POST" action="/contact">
                             <label for="subject">Asunto</label>
                             <input class="form__input" type="text" name="subject" id="subject">
                             <label for="from">De parte de</label>
                             <input class="form__input" type="text" name="from" id="from">
                             <label for="comment">Comentario</label>
-                            <textarea class="form__input form__input--textArea" rows="4" name="coment" id="comment"></textarea>
-                            <input class="form__input form__input--submit" type="submit" name="subject" id="subject" value="Enviar">
+                            <textarea class="form__input form__input--textArea" rows="4" name="comment" id="comment"></textarea>
+                            <input class="form__input form__input--submit" type="submit" value="Enviar">
                         </form>
                     </div>
                 </div>
