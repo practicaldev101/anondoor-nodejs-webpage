@@ -11,7 +11,7 @@ app.get("/", (req, res) =>{
 });
 
 app.get("/test", (req, res)=>{
-    res.send(__dirname)
+    res.sendFile(__dirname +  "/theme/default/CSS/navbar.css");
 });
 app.post("/contact", (req, res) =>{
     var data = {
