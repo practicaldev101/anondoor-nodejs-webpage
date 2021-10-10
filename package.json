@@ -4,11 +4,12 @@
     "express": "^4.17.1"
   },
   "name": "nodejs",
-  "description": "Servidor básico con NodeJS",
+  "description": "Servidor con NodeJS + Web page",
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
+    "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
