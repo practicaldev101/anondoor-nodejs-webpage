@@ -6,13 +6,11 @@ const puerto = 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/static', express.static(__dirname + '/public'));
+
 app.get("/", (req, res) =>{
     res.sendFile(__dirname +  "/views/home.html");
 });
 
-app.get("/test", (req, res)=>{
-    res.sendFile(__dirname +  "/theme/default/CSS/navbar.css");
-});
 app.post("/contact", (req, res) =>{
     var data = {
         "subject": req.body.subject,
