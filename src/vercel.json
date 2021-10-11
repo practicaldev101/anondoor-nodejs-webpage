@@ -2,6 +2,12 @@
     "version": 2,
     "builds": [
         {
+
+            "src": "theme/**",
+            "use": "@vercel/static"
+          
+        },
+        {
             
             "src": "./index.js",
             "use": "@vercel/node"
