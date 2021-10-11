@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="static/CSS/navbar.css"/>
+    <link rel="stylesheet" href="static/CSS/body.css"/>
+    <link rel="stylesheet" href="static/CSS/footer.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="shortcut icon" href="static/img/favicon.ico" type="image/x-icon">
+</head>
+<body class="bg-green">
+    <!--Header nav-bar-->
+    <header class="header">
+        <div class="header__container">
+            <a href="#" class="container__link"><h2 class="container__title"><i class="fas fa-donate"></i>&nbsp; Donate here</h2></a>
+        </div>
+        <nav class="header__nav-bar">
+            <div class="nav-bar__container nav-bar__container--left">
+                <img class="nav-bar__logo" src="static/img/favicon.png" alt="Logo">
+            </div>
+            <div class="nav-bar__container">
+                <ul class="nav-bar__list">
+                    <li class="list__item"><a href="#home" class="list__link">Inicio</a></li>
+                    <li class="list__item"><a href="#about" class="list__link">Sobre Nosotros</a></li>
+                    <li class="list__item"><a href="#contact" class="list__link">Contacto</a></li>
+                    <li class="list__item"><a href="#authors" class="list__link">Más</a></li>
+                </ul>
+            </div>
+            <div class="nav-bar__container--mobile">
+                <i id="menu" class="nav-bar__icon ri-menu-line" onclick="showMenu()">
+                    <ul class="nav-bar__list--mobile">  
+                        <li class="list__item"><a href="#home" class="list__link">Inicio</a></li>
+                        <li class="list__item"><a href="#about" class="list__link">Sobre Nosotros</a></li>
+                        <li class="list__item"><a href="#contact" class="list__link">Contacto</a></li>
+                        <li class="list__item"><a href="#authors" class="list__link">Más</a></li>
+                    </ul>
+                </i>
+                <img class="nav-bar__logo" src="static/img/favicon.png" alt="Logo">
+            </div>
+        </nav>
+    </header>
+
+        <main class="main bg-green">
+            <!--First section - Background image -->
+            <section id="home" class="main__container bg-gray">
+                <div class="container__col container__col--hg4">
+                    <img class="col__img" src="static/img/background.webp" alt="">
+                    <h2 class="col__title-img">ANONDOOR</h2>
+                
+                </div>
+            </section>
+
+            <!--Second section - Interactive buttons-->
+            <section class="main__container main__container--column bg-dark">
+                <div class="container__row container__col--hg2">
+                    <h2 class="col__title col__title--center col__title--header col__text--white">¿Por qué elegir nuestro servicio?</h2>
+                </div>
+                <div class="container__row">
+                    <div class="container__col container__col--w3 container__col--hg3 col__text--white container__col--mg5 bg-gray bd-15 box col">
+                        <h3 class="col__title">Buena calidad</h3>
+                        <i class="ri-medal-line"></i>
+                        <p class="col__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eligendi, aliquid eos quae harum nobis natus maiores vitae tempore dolores maxime facilis inventore laborum sunt voluptas quod accusamus aut dolore!</p>
+                    </div>
+                    <div class="container__col container__col--w3 container__col--hg3 col__text--white container__col--mg5 bg-gray bd-15 box">
+                        <h3 class="col__title">Máximo rendimiento</h3>
+                        <i class="ri-line-chart-line"></i>
+                        <p class="col__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eligendi, aliquid eos quae harum nobis natus maiores vitae tempore dolores maxime facilis inventore laborum sunt voluptas quod accusamus aut dolore!</p>
+                    </div>
+                    <div class="container__col container__col--w3 container__col--hg3 col__text--white container__col--mg5 bg-gray bd-15 box">
+                        <h3 class="col__title">Precisión</h3>
+                        <i class="ri-donut-chart-fill"></i>
+                        <p class="col__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eligendi, aliquid eos quae harum nobis natus maiores vitae tempore dolores maxime facilis inventore laborum sunt voluptas quod accusamus aut dolore!</p>
+                    </div>
+                </div>
+                <div class="container__col container__col--hg1"></div>
+            </section>
+            <!--Third section - About us-->
+        <section id="about" class="main__container bg-green">
+            
+            <!--Image container-->
+            <div class="container__col container__col--w6 container__col--hgrel container__col--hgrel">
+                <img class="col__img" src="static/img/first-image.webp" alt="">
+                <h2 class="col__title-img">ANONDOOR</h2>
+            </div>
+
+            <!--Text container-->
+            <div class="container__col container__col--w4 container__col--hgrel container__col--hgrel">
+                <h2 class="col__title col__text--white">Sobre Nostros</h2>
+                <p class="col__text col__text--white">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eligendi, aliquid eos quae harum nobis natus maiores vitae tempore dolores maxime facilis inventore laborum sunt voluptas quod accusamus aut dolore!
+                </p>
+                <p class="col__text col__text--white">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio deserunt maiores mollitia dolorem voluptatibus velit provident, soluta ipsam rerum eum totam unde, dolor quos alias obcaecati et, reprehenderit laboriosam numquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis odit reprehenderit quidem laboriosam sunt sit dicta dolorum eligendi perspiciatis consequatur nostrum doloremque, quod sint dignissimos ipsam qui ipsum modi doloribus?
+                </p>
+                <p class="col__text col__text--white">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptatum corporis, consequatur nobis suscipit possimus porro vel aspernatur deleniti dolorum consectetur, quae non aperiam aut officiis quisquam debitis labore quis.
+                </p>
+            </div>
+        </section>
+        <!--4th section - Contact form-->
+        <section id="contact" class="main__container main__container--column bg-dark">
+            <div class="container__row container__col--hg2 col__text--white">
+                <h2 class="col__title col__title--center col__title--header"><i class="fas fa-headset"></i></h2>
+            </div>
+            <div class="container__row">
+                <div class="container__col container__col--w2 container__col--hgrel col__text--white container__col--mg5"></div>
+                <div class="container__col container__col--w4 container__col--hgrel col__text--white container__col--mg5">
+                    <div class="col__form bd-15">
+                        <form method="POST" action="/contact">
+                            <label for="subject">Asunto</label>
+                            <input class="form__input" type="text" name="subject" id="subject">
+                            <label for="from">De parte de</label>
+                            <input class="form__input" type="text" name="from" id="from">
+                            <label for="comment">Comentario</label>
+                            <textarea class="form__input form__input--textArea" rows="4" name="comment" id="comment"></textarea>
+                            <input class="form__input form__input--submit" type="submit" value="Enviar">
+                        </form>
+                    </div>
+                </div>
+                <div class="container__col container__col--w2 container__col--hgrel col__text--white container__col--mg5"></div>
+            </div>
+            <div class="container__col container__col--hg1"></div>
+        </section>
+        <!--5th section - Authors-->
+        <section id="authors" class="main__container main__container--column bg-dark">
+            <div class="container__col container__col--hgrel">
+                <div class="container__row container__col--hg2 col__text--white">
+                    <h2 class="col__title col__title--center col__title--header"><i class="fas fa-user-friends"></i>&nbsp;Desarrolladores</h2>
+                </div>
+                <!-- Make a row-->
+                <div class="container__row">
+
+                    <!-- First card -->
+                    <div class="container__col container__col--w3 container__col--hg4 col__text--white container__col--mg5 bd-15">
+                        <div class="container__row">
+                            <div class="container__col container__col--hg2 mg-0">
+                                <img class="col__img" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="">
+                            </div>  
+                            <div class="container__col container__row--hgrel bg-orange mg-0 bd-15">
+                                <h2 class="col__title col__title--center">...</h2>
+                            </div>  
+                            <div class="container__row container__row--convertRow">
+                                    <a href="#" class="container__link"><i class="fab fa-github"></i></a>
+                                    <a href="#" class="container__link"><i class="fab fa-instagram"></i></a>
+                            </div> 
+                        </div>
+                    </div>
+
+                    <!-- Second card -->
+                    <div class="container__col container__col--w3 container__col--hg4 col__text--white container__col--mg5 bd-15">
+                        <div class="container__row">
+                            <div class="container__col container__col--hg2 mg-0">
+                                <img class="col__img" src="https://avatars.githubusercontent.com/u/88525633" alt="">
+                            </div>  
+                            <div class="container__col container__row--hgrel bg-orange mg-0 bd-15">
+                                <h2 class="col__title col__title--center">Practical Dev</h2>
+                            </div>  
+                            <div class="container__row container__row--convertRow">
+                                    <a href="https://github.com/practicaldev101" target="_blank" class="container__link"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/practical_dev/" target="_blank" class="container__link"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="container__link"><i class="fab fa-youtube"></i></a>
+                                </div> 
+                        </div>
+                    </div>
+
+                    <!-- Third card -->
+                    <div class="container__col container__col--w3 container__col--hg4 col__text--white container__col--mg5 bd-15">
+                        <div class="container__row">
+                            <div class="container__col container__col--hg2 mg-0">
+                                <img class="col__img" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="">
+                            </div>  
+                            <div class="container__col container__row--hgrel bg-orange mg-0 bd-15">
+                                <h2 class="col__title col__title--center">...</h2>
+                            </div>  
+                            <div class="container__row container__row--convertRow">
+                                    <a href="#" class="container__link"><i class="fab fa-github"></i></a>
+                                    <a href="#" class="container__link"><i class="fab fa-instagram"></i></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="container__col container__col--hg1"></div>
+                </div>
+                
+            </div> 
+            
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="footer__list">
+            <li class="list__item">Siguenos en: </li>
+            <li class="list__item"><a href="#" class="list__link"><i class="fab fa-youtube"></i></a></li>
+            <li class="list__item"><a href="#" class="list__link"><i class="fab fa-whatsapp"></i></a></li>
+            <li class="list__item"><a href="#" class="list__link"><i class="fab fa-telegram"></i></a></li>
+            <li class="list__item"><a href="#" class="list__link"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+    </footer>
+<script src="default/JS/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+:root{
+    --nav-bg: #4FB477;
+    --dark: #1E212B;
+    --black: #000814;
+    --orange: #FFC800;
+    --text-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header{
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background: var(--dark);
+    border-bottom: var(--orange) 2px solid;
+}
+
+.header__container{
+    background: var(--orange);
+}
+.container__title{
+    text-align: center;
+    font-weight: normal;
+    font-size: medium;
+    font-family: var(--text-font);
+}
+
+.header__nav-bar{
+    overflow: hidden;
+}
+
+.nav-bar__container{
+    height: 60px;
+    float: right;
+}
+.nav-bar__container--mobile{
+    display: none;
+}
+.nav-bar__container img{
+    object-fit: cover;
+    height: 55px;
+    margin: 0 10px;
+    image-rendering: optimizeQuality;
+}
+.nav-bar__container--left{
+    float: left;
+}
+.nav-bar__list{
+    list-style: none;
+}
+.nav-bar__title{
+    display: inline;
+    text-align: center;
+    font-weight: normal;
+    font-size: medium;
+    font-family: var(--text-font);
+}
+
+.list__link{
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+}
+.list__item{
+    display: inline-block;
+    font-family: var(--text-font);
+}
+.list__link:hover{
+    filter: brightness(80%);
+    cursor: pointer;
+}
+
+.list__link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--orange);
+    transition: width .3s;
+}
+.list__link:hover::after{
+    width: 100%;
+}
+@media only screen and (max-width: 768px){
+    @keyframes open {
+        0%{
+            display: none;
+            width: 0;
+        }
+        100%{
+            display: block;
+            width: 100%;
+        }
+    }
+    .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: transparent;
+        border-bottom: none;
+        animation:  0.5s ease-in-out 0.1s 1 open;
+    }
+    .header__nav-bar{
+        height: 100%;
+    }
+    .nav-bar__container{
+        display: none;
+    }
+    .nav-bar__container--mobile{
+        width: 100%;
+        display: block;
+    }
+    .nav-bar__container--mobile img{
+        position: absolute;
+        right: 5%;
+        top: 20px;
+        height: 50px;
+        image-rendering: optimizeQuality;
+        object-fit: cover;
+    }
+    .nav-bar__icon{
+        background: var(--nav-bg);
+        cursor: pointer;
+        font-size: 50px;
+    }
+    .nav-bar__list--mobile{
+        font-size: 30px;
+        display: none;
+    }
+    .list__item{
+        width: 50%;
+        display: block;
+        font-family: var(--text-font);
+        font-size: 20px;
+    }
+    
+    
+}
