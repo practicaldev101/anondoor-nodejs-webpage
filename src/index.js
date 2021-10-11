@@ -4,8 +4,8 @@ const app = express()
 const puerto = 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use('/static', express.static(__dirname + '/theme'));
 
+app.use('/static', express.static(__dirname + '/public'));
 app.get("/", (req, res) =>{
     res.sendFile(__dirname +  "/views/home.html");
 });
